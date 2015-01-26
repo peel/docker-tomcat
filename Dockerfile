@@ -1,7 +1,7 @@
 FROM peelsky/zulu-openjdk-busybox
 MAINTAINER Piotr Limanowski <plimanowski@gmail.com>
 
-ENV TOMCAT_VERSION 8.0.17
+ENV TOMCAT_VERSION 7.0.57
 
 RUN (curl -o /tmp/tomcat.zip -L http://mirror.tcpdiag.net/apache/tomcat/tomcat-${TOMCAT_VERSION:0:1}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.zip &&\
     unzip -q /tmp/tomcat.zip -d /opt &&\
